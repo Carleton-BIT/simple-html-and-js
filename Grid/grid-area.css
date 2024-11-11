@@ -1,0 +1,22 @@
+img {
+    width:100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5em 2fr 1fr 1.5em;
+    grid-template-areas:
+        "header header  header header"    /* layout your grid using your own strings */
+        ".      content side   ."         /* this still has to be a grid shape */
+        "footer footer  footer footer";   /* the footer spans all four columns */
+}
+
+.header, .content, .side, .footer { 
+    border: solid 0.1em black;
+    padding: 0.3em;
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+}
+.header { grid-area: header; background-color:rgb(247, 247, 247)}
+.content { grid-area: content; background-color:aqua}
+.side { grid-area: side; background-color:antiquewhite}
+.footer { grid-area: footer; background-color: lightgreen;}
