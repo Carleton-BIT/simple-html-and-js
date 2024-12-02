@@ -14,17 +14,17 @@
         <div class="product">
             <h2>Toothpaste</h2>
             <img src="images/toothpaste.jpg">
-            <button>Add to Cart</button>
+            <button onclick="addToCart('Toothpaste')">Add to Cart</button>
         </div>
         <div class="product">
             <h2>Bananas</h2>
             <img src="images/bananas.jpg">
-            <button>Add to Cart</button>
+            <button onclick="addToCart('Bananas')">Add to Cart</button>
         </div>
         <div class="product">
             <h2>Textbook</h2>
             <img src="images/eloquent.jpg">
-            <button>Add to Cart</button>
+            <button onclick="addToCart('Textbook')">Add to Cart</button>
         </div>
     </div>
 
@@ -33,7 +33,7 @@
         <ul id="cart-items">
             <!--Cart Items Go Here-->
         </ul>
-        <button>Clear Cart</button>
+        <button onclick="clearCart()">Clear Cart</button>
     </div>
 
     <script src="cart.js"></script>
